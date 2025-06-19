@@ -93,7 +93,7 @@ html, body {
 }
 .background img {
   width: 100%;
-  height: 500px;
+  height: 450px;
   object-fit: cover; /* Ensures the image covers the entire div */
   display: block;
   
@@ -192,7 +192,7 @@ html, body {
 
 .clnt img {
   height: 80px;
-  margin: 0 30px;
+  margin: 0 20px;
   flex-shrink: 0;
   transition: transform 0.3s ease-in-out;
 }
@@ -215,7 +215,7 @@ html, body {
 }
 
 .clint-section{
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
 }
@@ -282,7 +282,7 @@ html, body {
 
 }
 .ke{
-   padding: 40px;
+   margin-bottom: 40px;
     text-align: center;
     background-color: #f9f9f9;
     
@@ -291,11 +291,9 @@ html, body {
    
     width: 100%;
   background-color: #f9f9f9;
-  padding: 20px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 10px 10px 10px 10px;
+  gap: 30px;
   background-color: aqua;
 }
 .img1 img{
@@ -334,4 +332,65 @@ html, body {
 .img1 h1{
     font-size: 10Px;
 }
+}
+.project{
+    width: 100%;
+    top: 0;
+}
+.prodiv{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+    gap: 10px;
+}
+.proimg{
+     flex: 1;
+     position: relative; 
+     overflow: hidden;
+     transition: transform 0.3s ease;
+}
+.proimg:hover{
+    transform: scale(0.9);
+    transform-origin: left;
+}
+.proimg img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+}
+.protext{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+    color: #fff;
+     opacity: 0;
+    transition: opacity 0.3s ease;
+   
+} 
+.protext h1{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 5px;
+
+    
+}
+ .protext:hover{
+    opacity: 1;
+}
+.Service{
+    text-align: center;
+    color: purple;
 }
