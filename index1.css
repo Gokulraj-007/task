@@ -174,6 +174,10 @@ html, body {
         font-size: 2rem;
 
 }
+.subtitle{
+    font-size: 1.5 rem;
+    font-weight: 400;
+}
     
 }
 
@@ -334,14 +338,18 @@ html, body {
 }
 }
 .project{
+    border-bottom: 20px;
     width: 100%;
     top: 0;
 }
 .prodiv{
     width: 100%;
-    display: flex;
-   justify-content: center;
-    gap: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: aqua;
+  border-bottom: 20px;
 }
 .proimg{
      flex: 1;
@@ -371,19 +379,25 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0 20px;
     color: #fff;
-     opacity: 0;
+    opacity: 0;
     transition: opacity 0.3s ease;
+     
    
 } 
+
 .protext h1{
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    position: absolute;
+   position: absolute;
     border-bottom: 2px solid aqua;
     padding-bottom: 5px;
+   
+    
+    
+    
 
     
 }
@@ -394,3 +408,47 @@ html, body {
     text-align: center;
     color: purple;
 }
+@media (max-width: 480px) {
+  .prodiv {
+    flex-direction: column; 
+  }
+  .proimg {
+    width: 100%; 
+  }
+}
+#contact{
+    width: 100%;
+    padding: 30px 20px 30px 20px;
+    align-items: center;
+    background-color: aquamarine;
+    justify-content: center;
+}
+ #contact form {
+    padding: 10px 10px 10px 10px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    
+  }
+  
+  #contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #contact button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #contact button:hover {
+    background-color: #555;
+  }
